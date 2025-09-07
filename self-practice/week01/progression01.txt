@@ -1,0 +1,49 @@
+------------------------------------------
+# คำอธิบายของแต่ละไฟล์
+arrays-inclass.js => เป็นไฟล์ที่เก็บ Lecture ในคลาส
+arrays02-inclass.js => เป็นไฟล์ที่เก็บ Lecture ในคลาส (เหมือนกัน)
+------------------------------------------
+
+ในสัปดาห์แรกๆ จะทำการทวนเนื้อหา 3 ส่วนหลักๆ คือ arrays, objects, functions
+
+Arrays
+--------------------------
+array นั้นเป็นโครงสร้างข้อมูลแบบเป็นลำดับ ซึ่งเริ่ม index จาก 0
+เก็บค่าต่างชนิดกันได้ อย่างเช่น number, string, object และอื่นๆ
+ซึ่งตัว array นั้นมันเป็น Dynamic (คือสามารถเพิ่มลดขนาดได้)
+
+Objects
+--------------------------
+เป็นชุดที่มี {key: value}
+ซึ่งค่า value อาจจะเป็น primitive, array, หรือแม้กระทั่ง function และเป็น Dynamic เหมือนกัน
+
+Functions
+-------------------------
+Function คิดง่ายๆ เป็นกล่องที่เราสามารถ Reuser ได้ซ้ำเรื่อยๆๆๆ
+และมีสามแบบ
+Function Declaration
+---
+ฟังก์ชันแบบประกาศ
+function sayHello(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(sayHello("Chayanon"));
+
+Function Expression
+---
+ฟังก์ชั่นแบบเก็บไว้ในตัวแปร
+const sayHi = function(name) {
+  return `Hi, ${name}!`;
+};
+
+console.log(sayHi("Chayanon"));
+
+Arrow Function
+---
+ฟังก์ชั่นแบบสั้นกระจิดริด
+const greet = (name) => {
+  return `Greetings, ${name}!`;
+};
+
+console.log(greet("Chayanon"));

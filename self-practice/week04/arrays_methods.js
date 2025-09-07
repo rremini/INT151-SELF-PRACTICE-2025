@@ -1,9 +1,13 @@
 
+
 const words = ["apple", "mango", "oranges", "mangosteen"];
 // const shortword = words.filter(word => word.length <= 6); // Callback Fcuntion
 const shortword = words.filter(function (word) {
     word.filter <= 6
 })
+
+const result = words.filter(word => word.length > 6);
+console.log(result);
 
 // 3. Reuse callback Fcuntion (named function)
 function wordLength(word) {
